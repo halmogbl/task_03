@@ -5,6 +5,12 @@
         <title>List</title>
     </head>
     <body>
-
+    	
+    	{% for x in my_list %}
+    		<ol>
+    			{{ x.restaurant_name }} only has a 
+    			{{ x.food_type}} as a launch 
+    		</ol>
+    	{% endfor %}
     </body>
 </html>
